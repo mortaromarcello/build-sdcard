@@ -5,7 +5,7 @@ if [[ ! $1 ]] || [[ ! $2 ]]; then
 	exit 1
 fi
 DIR=$(pwd)
-BUILDROOT=$DIR/buildroot-allwinner
+BUILDROOT=$DIR/buildroot-A10
 echo "$(date)" >> prepare_sd.log
 echo "Unmount partitios $1(1/2)"
 mounted=$(mount | grep ${1}1)
